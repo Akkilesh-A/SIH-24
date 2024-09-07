@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { H1, H2, H3 } from '@/components'
+import { H1, H3 } from '@/components'
 import { Button, FlipWords, Carousel, Card, ParallaxScroll  } from '@/components/ui'
 import Image from "next/image";
 
@@ -91,7 +91,6 @@ const images=[
 ]
 
 const words1=["Talent","Skill","Dream"]
-const words2=["Oppurtunity","Positivity","Money"]
 const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
 ));

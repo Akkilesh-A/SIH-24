@@ -18,13 +18,13 @@ export const ParallaxScroll = ({
     offset: ["start start", "end start"], // remove this if your container is not fixed height
   });
 
-  const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);
+//   const translateFirst = useTransform(scrollYProgress, [0, 1], [0, -200]);
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
   const third = Math.ceil(images.length / 3);
 
-  const firstPart = images.slice(0, third);
+//   const firstPart = images.slice(0, third);
   const secondPart = images.slice(third, 2 * third);
   const thirdPart = images.slice(2 * third);
 
